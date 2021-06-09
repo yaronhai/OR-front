@@ -10,8 +10,9 @@ const PersonCard = ({person}) => {
                 width= "80"
                 height= "100"
             />
-            <h3>{person.name}</h3>
+            <h2>{person.name}</h2>
             <p>{person.email}</p>
+            <p>Tel: {person.phone}</p>
         </div>
     )
 }

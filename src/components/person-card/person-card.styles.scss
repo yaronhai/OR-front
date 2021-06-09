@@ -10,11 +10,13 @@
     backface-visibility: hidden;
     transform: translateZ(0);
     transition: transform 0.25s ease-out;
+    font-weight: bold;
   
     &:hover {
         transform: scale(1.05);
     }
-    h3{
+    h2,h3{
         color:darkblue;
+        
     }
 }
