@@ -1,22 +1,35 @@
-.card {
+.card_container {
     display: flex;
     flex-direction: column;
     background-color: grey;
     border: 1px solid black;
     border-radius: 10px;
-    padding: 15px;
+    padding: 10px;
     cursor: pointer;
     -moz-osx-font-smoothing: grayscale;
     backface-visibility: hidden;
     transform: translateZ(0);
     transition: transform 0.25s ease-out;
     font-weight: bold;
+    margin:0;
+    
   
     &:hover {
         transform: scale(1.05);
+        background-color: darkgrey;
     }
-    h2,h3{
-        color:darkblue;
-        
-    }
+}
+.header{
+    display:flex;
+    flex-direction: row;
+    color:darkblue; 
+    h2{
+        padding:10px;
+        margin:10px;
+    }  
+
+}
+
+.details{
+    color:black;
 }

@@ -14,7 +14,7 @@ const ROOMS_DATA = [
         description: "Room no.3 in OR"
     },                {
         id:4,
-        site: "operating room",
+        site: "IVF",
         description: "Room no.4 in OR"
     }
 ]
