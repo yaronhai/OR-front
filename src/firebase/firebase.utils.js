@@ -3,13 +3,12 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 const config = {
-    apiKey: "AIzaSyDWHmBmMAIi79Ga0VySUeTPP5DT666X3eU",
-    authDomain: "or-backend.firebaseapp.com",
-    projectId: "or-backend",
-    storageBucket: "or-backend.appspot.com",
-    messagingSenderId: "291835866102",
-    appId: "1:291835866102:web:e5361e7992ba814358b5d7",
-    measurementId: "G-724JWC7KMK"
+  apiKey: "AIzaSyA5wkXzOcQnm2esREws7YzfAR1siUHOBPI",
+  authDomain: "or-back.firebaseapp.com",
+  projectId: "or-back",
+  storageBucket: "or-back.appspot.com",
+  messagingSenderId: "407770497637",
+  appId: "1:407770497637:web:1450a6ac3da04722eb7c8c"
 };
 
 
@@ -19,6 +18,9 @@ export const firestore = firebase.firestore();
 
 const provider = new firebase.auth.GoogleAuthProvider();
 provider.setCustomParameters({ prompt:'select_account'  });
-export const signInWithGoogle = () => auth.signInWithPopup(provider);
+export const signInWithGoogle = () => (
+  auth.signInWithPopup(provider).catch(error => console.log(error))
+);
 
-export default firebase;
+export default firebase; 
+
