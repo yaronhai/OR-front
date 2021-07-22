@@ -15,12 +15,13 @@ class HomePage extends React.Component{
     }
     componentDidMount() {
         fetch('https://jsonplaceholder.typicode.com/users')
-        .then(Response => Response.json())
+        .then(resp => resp.json())
         .then(users => this.setState({Workers: users}))
+        .catch(console.log)
       }
 
     handleChange = e => {
-        this.setState({searchField: e.target.value});
+        this.setState({searchField: e.target.value}, console.log(this.state.searchField));
     }
 
     render(props){
